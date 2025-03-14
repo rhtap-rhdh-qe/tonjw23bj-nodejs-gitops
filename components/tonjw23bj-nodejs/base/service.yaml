@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: tonjw23bj-nodejs
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: tonjw23bj-nodejs 
+  name: tonjw23bj-nodejs
+spec:
+  ports:
+  - port: 3001 
+    targetPort: 3001 
+  selector:
+    app.kubernetes.io/instance: tonjw23bj-nodejs 
